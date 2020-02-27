@@ -10,13 +10,10 @@ end
 
 def print_first_directors_movie_titles
   
-  row_index = 0
-while row_index < directors_database.length do
-  puts "puts "Row #{row_index} has #{directors_database[row_index]} columns"
-  
-  column_index = 0
-  while column_index < directors_database[row_index].length
-  do
-    coord = "#{row_index}, #{column_index}"
-    inner_len = directors_database[row_index][column_index].length
+  movies_ar = directors_database[0][:movies]
+   movies_ar_index = 0
+   while movies_ar_index < movies_ar.count do
+     puts movies_ar[movies_ar_index][:title]
+     movies_ar_index += 1 
+   end 
 end
