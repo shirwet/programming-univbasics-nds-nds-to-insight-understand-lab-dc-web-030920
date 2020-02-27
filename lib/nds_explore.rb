@@ -16,5 +16,7 @@ while row_index < directors_database.length do
   
   column_index = 0
   while column_index < directors_database[row_index].length
-  
+  do
+    coord = "#{row_index}, #{column_index}"
+    inner_len = vm[row_index][column_index].length
 end
